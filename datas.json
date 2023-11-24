@@ -1,0 +1,24 @@
+{
+   "@context": "http://schema.org",
+   "@type": "LocalBusiness",
+   "name": "Nina Carducci",
+   "image": "https://ninacarducci.github.io/assets/images/nina.png",
+   "address": {
+	  "@type": "PostalAddress",
+	  "streetAddress": "68 avenue Alsace-Lorraine",
+	  "addressLocality": "Bordeaux",
+	  "postalCode": "33200",
+	  "addressCountry": "France"
+   },
+   "telephone": "05 56 67 78 89",
+   "openingHours": "lundi au vendredi de 10h à 19h",
+   "geo": {
+	  "@type": "GeoCoordinates",
+	  "latitude": "48.862725",
+	  "longitude": "2.287592"
+   },
+   "priceRange": "à partir de 50 euros",
+   "sameAs": [
+	  "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+   ]
+}

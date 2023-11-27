@@ -1,6 +1,6 @@
 {
    "@context": "http://schema.org",
-   "@type": "LocalBusiness",
+   "@type": "ProfessionalService",
    "name": "Nina Carducci",
    "image": "https://ninacarducci.github.io/assets/images/nina.png",
    "address": {

@@ -3,10 +3,10 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Nina Carducci, photographe passionnée qui ne demande qu’à immortaliser vos moments les plus précieux. Déplacement en Île-de-France et réponse sous 24 heures pour vos devis.">
+	<meta name="description" content="Nina Carducci, photographe passionnée prête à immortaliser vos moments les plus précieux. Déplacement en Île-de-France et réponse sous 24 heures pour vos devis.">
 	<meta name="geo.region" content="NVL">
    	<meta name="geo.placename" content="Bordeaux">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://ninacarducci.github.io" >
 	<meta property="og:title" content="Nina Carducci - Photographe Île-de-France">
-	<meta property="og:description" content="Nina Carducci, photographe passionnée qui ne demande qu’à immortaliser vos moments les plus précieux. Déplacement en Île-de-France et réponse sous 24 heures pour vos devis.">
+	<meta property="og:description" content="Nina Carducci, photographe passionnée prête à immortaliser vos moments les plus précieux. Déplacement en Île-de-France et réponse sous 24 heures pour vos devis.">
 	<meta property="og:image" content="https://ninacarducci.github.io/assets/images/nina.webp">
 	<title>Nina Carducci - Photographe Île-de-France</title>
 </head>
@@ -51,20 +51,30 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<picture>
-						<!-- <source srcset="image-large.jpg" media="(min-width: 1200px)">
-						<source srcset="image-medium.jpg" media="(min-width: 768px)"> -->
-						<img src="./assets/images/slider/ryoji-iwata-extra-large.webp
-					" class="d-block w-100" alt="ryoji iwata">
+						<source srcset="./assets/images/slider/ryoji-iwata-extra-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/slider/ryoji-iwata-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/slider/ryoji-iwata-medium.webp" media="(min-width: 320px)">
+						<img src="./assets/images/slider/ryoji-iwata-small.webp" class="d-block w-100" alt="ryoji iwata">
 					</picture>
-					
+					<!-- <img src="./assets/images/slider/ryoji-iwata-extra-large.webp" class="d-block w-100" alt="ryoji iwata"> -->
 				</div>
 				<div class="carousel-item">
-					<img src="./assets/images/slider/nicholas-green-extra-large.webp
-				" class="d-block w-100" alt="nicholas green">
+					<picture>
+						<source srcset="./assets/images/slider/nicholas-green-extra-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/slider/nicholas-green-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/slider/nicholas-green-medium.webp" media="(min-width: 320px)">
+						<img src="./assets/images/slider/nicholas-green-small.webp" class="d-block w-100" alt="nicholas green">
+					</picture>
+					<!-- <img src="./assets/images/slider/nicholas-green-small.webp" class="d-block w-100" alt="nicholas green"> -->
 				</div>
 				<div class="carousel-item">
-					<img src="./assets/images/slider/edward-cisneros-extra-large.webp
-				" class="d-block w-100" alt="edward cisneros">
+					<picture>
+						<source srcset="./assets/images/slider/edward-cisneros-extra-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/slider/edward-cisneros-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/slider/edward-cisneros-medium.webp" media="(min-width: 320px)">
+						<img src="./assets/images/slider/edward-cisneros-small.webp" class="d-block w-100" alt="edward cisneros">
+					</picture>
+					<!-- <img src="./assets/images/slider/edward-cisneros-extra-large.webp" class="d-block w-100" alt="edward cisneros"> -->
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -80,7 +90,13 @@
 		</section>
 		<section id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina-site.webp" alt="photo de Nina Carducci">
+				<picture>
+					<source srcset="./assets/images/nina.webp" media="(min-width: 1200px)">
+					<source srcset="./assets/images/nina-large.webp" media="(min-width: 768px)">						
+					<source srcset="./assets/images/nina-medium.webp" media="(min-width: 320px)">
+					<img src="./assets/images/nina-small.webp" alt="photo de Nina Carducci">
+				</picture>
+				<!-- <img src="./assets/images/nina-site.webp" alt="photo de Nina Carducci"> -->
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -99,33 +115,87 @@
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
-					<picture>
-						<!-- <source srcset="./assets/images/gallery/concerts/aaron-paul-large.webp" media="(min-width: 1200px)">
-						<source srcset="./assets/images/gallery/concerts/aaron-paul-medium.webp" media="(min-width: 768px)">						
-						<source srcset="./assets/images/gallery/concerts/aaron-paul-small.webp" media="(min-width: 320px)"> -->
-						<!-- <img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/aaron-paul.webp" alt="concert Aaron Paul"> -->
+					<picture data-gallery-tag="Concert" class="gallery-item">
+						<source srcset="./assets/images/gallery/concerts/aaron-paul-extra-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/gallery/concerts/aaron-paul-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/gallery/concerts/aaron-paul-medium.webp" media="(min-width: 320px)">
+						<img data-gallery-tag="Concert" class="gallery-item"
+						src="./assets/images/gallery/concerts/aaron-paul-small.webp" alt="concert Aaron Paul">
 					</picture>
-					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/aaron-paul-gallery.webp" alt="concert Aaron Paul">
-					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/ali-morshedlou-gallery.webp" alt="entreprise ali morshedlou">
-					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/jason-goodman-gallery.webp" alt="entreprise jason goodman">
-					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/hannah-busing-gallery.webp" alt="mariage hannah busing">
-					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/ade-tunji-gallery.webp" alt="portrait ade tunji">
-					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/jakob-owens-gallery.webp" alt="mariage jakob owens">
-					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/nino-van-prattenburg-gallery.webp"
-						alt="portrait nino van prattenburg">
-					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/austin-neill-gallery.webp" alt="concert austin neill">
-					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/mateus-campos-felipe-gallery.webp"
-						alt="entreprise mateus campos felipe">
+					<!-- <img data-gallery-tag="Concert" class="gallery-item"
+						src="./assets/images/gallery/concerts/aaron-paul-gallery.webp" alt="concert Aaron Paul"> -->
+					<picture data-gallery-tag="Entreprises" class="gallery-item">
+						<source srcset="./assets/images/gallery/entreprise/ali-morshedlou-extra-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/gallery/entreprise/ali-morshedlou-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/gallery/entreprise/ali-morshedlou-medium.webp" media="(min-width: 320px)">
+						<img data-gallery-tag="Entreprises" class="gallery-item"
+						src="./assets/images/gallery/entreprise/ali-morshedlou-small.webp" alt="entreprise ali morshedlou">
+					</picture>	
+					<!-- <img data-gallery-tag="Entreprises" class="gallery-item"
+						src="./assets/images/gallery/entreprise/ali-morshedlou-gallery.webp" alt="entreprise ali morshedlou"> -->
+					<picture data-gallery-tag="Entreprises" class="gallery-item">
+						<source srcset="./assets/images/gallery/entreprise/jason-goodman-extra-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/gallery/entreprise/jason-goodman-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/gallery/entreprise/jason-goodman-medium.webp" media="(min-width: 320px)">
+						<img data-gallery-tag="Entreprises" class="gallery-item"
+						src="./assets/images/gallery/entreprise/jason-goodman-small.webp" alt="entreprise jason goodman">
+					</picture>
+						<!-- <img data-gallery-tag="Entreprises" class="gallery-item"
+						src="./assets/images/gallery/entreprise/jason-goodman-gallery.webp" alt="entreprise jason goodman"> -->
+					<picture data-gallery-tag="Mariages" class="gallery-item">
+						<source srcset="./assets/images/gallery/mariage/hannah-busing-extra-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/gallery/mariage/hannah-busing-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/gallery/mariage/hannah-busing-medium.webp" media="(min-width: 320px)">
+						<img data-gallery-tag="Mariages" class="gallery-item"
+						src="./assets/images/gallery/mariage/hannah-busing-small.webp" alt="mariage hannah busing">
+					</picture>
+					<!-- <img data-gallery-tag="Mariages" class="gallery-item"
+						src="./assets/images/gallery/mariage/hannah-busing-gallery.webp" alt="mariage hannah busing"> -->
+					<picture data-gallery-tag="Portrait" class="gallery-item"> 
+						<source srcset="./assets/images/gallery/portraits/ade-tunji-extra-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/gallery/portraits/ade-tunji-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/gallery/portraits/ade-tunji-medium.webp" media="(min-width: 320px)">
+						<img data-gallery-tag="Portrait" class="gallery-item"
+						src="./assets/images/gallery/portraits/ade-tunji-small.webp" alt="portrait ade tunji">
+					</picture>
+					<!-- <img data-gallery-tag="Portrait" class="gallery-item"
+						src="./assets/images/gallery/portraits/ade-tunji-gallery.webp" alt="portrait ade tunji"> -->
+					<picture data-gallery-tag="Mariages" class="gallery-item">
+						<source srcset="./assets/images/gallery/mariage/jakob-owens-medium-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/gallery/mariage/jakob-owens-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/gallery/mariage/jakob-owens-medium.webp" media="(min-width: 320px)">
+						<img data-gallery-tag="Mariages" class="gallery-item"
+						src="./assets/images/gallery/mariage/jakob-owens-small.webp" alt="mariage jakob owens">
+					</picture>
+					<!-- <img data-gallery-tag="Mariages" class="gallery-item"
+						src="./assets/images/gallery/mariage/jakob-owens-gallery.webp" alt="mariage jakob owens"> -->
+					<picture data-gallery-tag="Portrait" class="gallery-item">
+						<source srcset="./assets/images/gallery/portraits/nino-van-prattenburg-extra-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/gallery/portraits/nino-van-prattenburg-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/gallery/portraits/nino-van-prattenburg-medium.webp" media="(min-width: 320px)">
+						<img data-gallery-tag="Portrait" class="gallery-item"
+						src="./assets/images/gallery/portraits/nino-van-prattenburg-small.webp" alt="portrait nino van prattenburg">
+					</picture>
+					<!-- <img data-gallery-tag="Portrait" class="gallery-item" 
+						src="./assets/images/gallery/portraits/nino-van-prattenburg-gallery.webp" alt="portrait nino van prattenburg"> -->
+					<picture data-gallery-tag="Concert" class="gallery-item">
+						<source srcset="./assets/images/gallery/concerts/austin-neill-extra-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/gallery/concerts/austin-neill-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/gallery/concerts/austin-neill-medium.webp" media="(min-width: 320px)">
+						<img data-gallery-tag="Concert" class="gallery-item"
+						src="./assets/images/gallery/concerts/austin-neill-small.webp" alt="concert austin neill">
+					</picture>
+					<!-- <img data-gallery-tag="Concert" class="gallery-item"
+						src="./assets/images/gallery/concerts/austin-neill-gallery.webp" alt="concert austin neill"> -->
+					<picture data-gallery-tag="Entreprises" class="gallery-item">
+						<source srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-extra-large.webp" media="(min-width: 1200px)">
+						<source srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-large.webp" media="(min-width: 768px)">						
+						<source srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-medium.webp" media="(min-width: 320px)">
+						<img data-gallery-tag="Entreprises" class="gallery-item"
+						src="./assets/images/gallery/entreprise/mateus-campos-felipe-small.webp" alt="entreprise mateus campos felipe">
+					</picture>
+					<!-- <img data-gallery-tag="Entreprises" class="gallery-item"
+						src="./assets/images/gallery/entreprise/mateus-campos-felipe-gallery.webp" alt="entreprise mateus campos felipe"> -->
 				</div>
 			</div>
 			<div class="quote">
@@ -205,11 +275,17 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camera-site.webp" alt="image d'une caméra">
+				<picture>
+					<source srcset="./assets/images/camera.webp" media="(min-width: 1200px)">
+					<source srcset="./assets/images/camera-large.webp" media="(min-width: 768px)">						
+					<source srcset="./assets/images/camera-medium.webp" media="(min-width: 320px)">
+					<img src="./assets/images/camera-small.webp" alt="image d'une caméra">
+				</picture>
+				<!-- <img src="./assets/images/camera-site.webp" alt="image d'une caméra"> -->
 			</div>
 		</div>
 	</footer>
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>

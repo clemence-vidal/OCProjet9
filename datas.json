@@ -3,6 +3,8 @@
    "@type": "ProfessionalService",
    "name": "Nina Carducci",
    "image": "https://ninacarducci.github.io/assets/images/nina.png",
+   "description": "Nina Carducci, photographe passionnée prête à immortaliser vos moments les plus précieux. Déplacement en Île-de-France et réponse sous 24 heures pour vos devis.",
+   "url": "https://ninacarducci.github.io/",
    "address": {
 	  "@type": "PostalAddress",
 	  "streetAddress": "68 avenue Alsace-Lorraine",

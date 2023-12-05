@@ -3,24 +3,35 @@
    "@type": "ProfessionalService",
    "name": "Nina Carducci",
    "image": "https://ninacarducci.github.io/assets/images/nina.png",
+   "@id": "https://clemence-vidal.github.io/OCProjet9/", 
    "description": "Nina Carducci, photographe passionnée prête à immortaliser vos moments les plus précieux. Déplacement en Île-de-France et réponse sous 24 heures pour vos devis.",
-   "url": "https://ninacarducci.github.io/",
+   "url": "https://clemence-vidal.github.io/OCProjet9/",
    "address": {
-	  "@type": "PostalAddress",
-	  "streetAddress": "68 avenue Alsace-Lorraine",
-	  "addressLocality": "Bordeaux",
-	  "postalCode": "33200",
-	  "addressCountry": "France"
-   },
+      "@type": "PostalAddress",
+      "streetAddress": "68 avenue Alsace-Lorraine",
+      "addressLocality": "Bordeaux",
+      "postalCode": "33200",
+      "addressCountry": "France"			   
+   },			
    "telephone": "05 56 67 78 89",
-   "openingHours": "lundi au vendredi de 10h à 19h",
+   "openingHoursSpecification": [
+      {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+         ],
+         "opens": "10:00",
+         "closes": "19:00"
+      }
+   ],
    "geo": {
-	  "@type": "GeoCoordinates",
-	  "latitude": "48.862725",
-	  "longitude": "2.287592"
+      "@type": "GeoCoordinates",
+      "latitude": 48.862725,
+      "longitude": 2.287592
    },
-   "priceRange": "à partir de 50 euros",
-   "sameAs": [
-	  "https://www.instagram.com/ninacarducci.photo/?hl=fr"
-   ]
+   "priceRange": "à partir de 50€"
 }
